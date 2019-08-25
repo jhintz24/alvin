@@ -11,17 +11,18 @@ class Application(tk.Frame):
         self.hi_there = tk.Button(self)
         self.hi_there["text"] = "Hello World\n(click me)"
         self.hi_there["command"] = self.say_hi
-        self.hi_there.pack()
 
-        self.quit = tk.Button(self, text="QUIT", fg="red",
-                              command=self.master.destroy)
+        self.quit = tk.Button(self, text="QUIT", command=self.master.destroy)
+        self.quit['fg'] = 'blue'
+
         self.quit.pack()
+        self.hi_there.pack()
 
     def say_hi(self):
         self.quit['text'] = 'oops'
         print("hi there, everyone!")
 
 root = tk.Tk()
-root.geometry("170x200+30+30")
+root.geometry("300x200+300+300")
 app = Application(master=root)
 app.mainloop()

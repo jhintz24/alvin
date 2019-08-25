@@ -1,15 +1,21 @@
 import speech_recognition as sr
-import Interpreter
-
+from Interpreter import Interpreter
+import argparse
 
 if __name__ == "__main__":
+
+    # Parse name of output app
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-appname', required=True, help='name of app file')
+    args = parser.parse_args()
+    appName = args.appname
 
     # Set the voice interpreter
     recognizer = sr.Recognizer()
     mic = sr.Microphone()
 
     # Set interpreter
-    interpreter = Interpreter()
+    interpreter = Interpreter(appName)
 
     # Start listening and interpreting voice input
     while True:
@@ -25,6 +31,7 @@ if __name__ == "__main__":
         except sr.UnknownValueError:
             print("did not understand...")
 
+        voiceInput = voiceInput.lower()
         if voiceInput == 'exit':
             break
 
