@@ -64,5 +64,5 @@ Alvin can currently handle commands for text, color, position, and basic events 
 Alvin uses the following third-party tools:
 1. [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) and [PyAudio](http://people.csail.mit.edu/hubert/pyaudio/#downloads) for translating voice-to-text.
 2. [Spacy](https://spacy.io/) for lemmanizing individual words before they are turned into commands. A "lemma" is the canonical or dictionary root word for any given set of words. For example, "worry" is the lemma of "worries, worried, etc.". Spacy also provides a tokenizer, but I chose to build my own because of Alvin's specific (and simple) use cases.
-3. [Tkinter](https://docs.python.org/3/library/tkinter.html) as the graphical user interface builder. I chose Tkinter over PyQt for it's simplicity.
+3. [Tkinter](https://docs.python.org/3/library/tkinter.html) for the graphical user interface builder. I chose Tkinter over PyQt for it's simplicity.
 
