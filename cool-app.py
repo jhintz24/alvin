@@ -7,8 +7,11 @@ class Application(tk.Frame):
         self.createWidgets()
     def createWidgets(self):
         self.button0 = tk.Button(self)
-        self.button0["text"] = "to push -PRON-"
+        self.button0["text"] = "-PRON- name"
         self.button0.pack()
+        self.button1 = tk.Button(self)
+        self.button1["text"] = "-PRON- name"
+        self.button1.pack()
 root = tk.Tk()
 root.geometry("300x300+300+300")
 app = Application(master=root)

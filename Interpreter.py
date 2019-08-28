@@ -35,7 +35,7 @@ class Interpreter:
 
             text = []
             for token in doc:
-                text.append(token.lemma_)
+                text.append(token.lemma_) # Currently has a problem with -PRON-
             print('TEXT', text)
 
         # Read in vocab
