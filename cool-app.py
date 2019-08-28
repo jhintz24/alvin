@@ -7,11 +7,16 @@ class Application(tk.Frame):
         self.createWidgets()
     def createWidgets(self):
         self.button0 = tk.Button(self)
-        self.button0["text"] = "-PRON- name"
-        self.button0.pack()
-        self.button1 = tk.Button(self)
-        self.button1["text"] = "-PRON- name"
-        self.button1.pack()
+        self.button0["text"] = "press"
+        self.button0["fg"] = "red"
+        self.button0["command"] = self.command0
+        self.button0.pack(side="bottom")
+        self.label0 = tk.Label(self)
+        self.label0["text"] = "test"
+        self.label0["fg"] = "blue"
+        self.label0.pack()
+    def command0(self):
+        self.label0["text"] = "success"
 root = tk.Tk()
 root.geometry("300x300+300+300")
 app = Application(master=root)
