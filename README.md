@@ -35,7 +35,7 @@ The current version of Alvin is more of a proof-of-concept than a fully usuable 
 1. A voice interpretter (voice-to-text)
 2. A command interpretter (text-to-command)
 3. A UI abstract (to hold the app structure dictated by the commands)
-4. An output writer (to write the app from the UI abstract). Alvin can write out an app from the UI abstract in any language for which it has an output write (i.e. Tkinter, PyQt, etc.)
+4. An output writer (to write the app from the UI abstract). Alvin can write out an app from the UI abstract in any language for which it has an output writer (i.e. Tkinter, PyQt, etc.)
 
 I've chosen to write Alvin in Python because of Python's flexibility and NLP libraries. I also know it the best :)
 
@@ -47,6 +47,18 @@ To run Alvin:
 python alvin.py -appname YOUR_APP_NAME
 ```
 and replace YOUR_APP_NAME with the name of the output app (i.e. cool-app.py)
+
+## Commands
+Alvin can currently handle commands for text, color, position, and basic events for buttons and labels. Example commands include:
+* Create a new app
+* Add a label that says "hello world"
+* Make the label blue
+* Add a button that says press me
+* Move the label to the bottom
+* Change the button color to red
+* Make the say "it worked" when I press the button
+* Move the button to the right
+* Remove the label
 
 ## Third-Party Tools
 Alvin uses the following third-party tools:
