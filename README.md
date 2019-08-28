@@ -4,7 +4,7 @@ Speech-driven application development
 ## Idea
 Alvin is an tool for developing apps (particularly user interfaces) through natural language interpretation, which could ultimately reduce development time and increase app development accessibility. 
 
-I've found that mapping out app screens in my head is relatively easy, but translating those screens from my brain to computer code takes effort and time, even for languages that I know well. It would be neat if I could just talk to the computer and describe what I want in natural language, and have the computer understand and build the screens for me. For example, telling the computer to 
+I've found that mapping out app screens in my head is relatively easy, but translating those screens from my brain to computer code is not always so straightforward. It would be neat if I could just talk to the computer and describe what I want in natural language, and have the computer understand and build the screens for me. For example, telling the computer to 
 >*"Add a label that says 'Hello World'"* 
 
 is trivial. Telling it to 
