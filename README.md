@@ -50,19 +50,19 @@ and replace YOUR_APP_NAME with the name of the output app (i.e. cool-app.py)
 
 ## Commands
 Alvin can currently handle commands for text, color, position, and basic events for buttons and labels. Example commands include:
-* Create a new app
-* Add a label that says "hello world"
-* Make the label blue
-* Add a button that says press me
-* Move the label to the bottom
-* Change the button color to red
-* Make the say "it worked" when I press the button
-* Move the button to the right
-* Remove the label
+* "Create a new app"
+* "Add a label that says 'hello world'"
+* "Make the label blue"
+* "Add a button that says press me"
+* "Move the label to the bottom"
+* "Change the button color to red"
+* "Make the say "it worked" when I press the button"
+* "Move the button to the right"
+* "Remove the label"
 
 ## Third-Party Tools
 Alvin uses the following third-party tools:
 1. [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) and [PyAudio](http://people.csail.mit.edu/hubert/pyaudio/#downloads) for translating voice-to-text.
-2. [Spacy](https://spacy.io/) for lemmanizing individual words before they are turned into commands. A "lemma" is the canonical or dictionary root word for any given set of words. For example, "worry" is the lemma of "worries, worried, etc.".
+2. [Spacy](https://spacy.io/) for lemmanizing individual words before they are turned into commands. A "lemma" is the canonical or dictionary root word for any given set of words. For example, "worry" is the lemma of "worries, worried, etc.". Spacy also provides a tokenizer, but I chose to build my own because of Alvin's specific (and simple) use cases.
 3. [Tkinter](https://docs.python.org/3/library/tkinter.html) as the graphical user interface builder. I chose Tkinter over PyQt for it's simplicity.
 
