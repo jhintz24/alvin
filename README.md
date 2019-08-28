@@ -11,7 +11,7 @@ is trivial. Telling it to
 >*"Create an app with five screens. The first is a standard login screen with textfields for username and password"* 
 
 is certainly more complex but still within the same domain. Of course coding UIs and coding complex logical behavior are two different beasts, but certainly simple logic could be explained to a computer through natural language. Telling the computer to 
->*"Increase the top label by one everytime the user presses the button at the bottom"* 
+>*"Increase the top label by one every time the user presses the button at the bottom"* 
 
 is just about as simple as any UI descripton. Telling the computer to 
 >*"Display a success popup whenever the program retreives new information from the Twitter API"* 
