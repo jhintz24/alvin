@@ -56,7 +56,7 @@ Alvin can currently handle commands for text, color, position, and basic events 
 * "Add a button that says press me"
 * "Move the label to the bottom"
 * "Change the button color to red"
-* "Make the say "it worked" when I press the button"
+* "Make the label say "it worked" when I press the button"
 * "Move the button to the right"
 * "Remove the label"
 
