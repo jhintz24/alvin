@@ -1,7 +1,7 @@
 # Alvin
-## Speech-driven application development
+Speech-driven application development
 
-### Idea
+## Idea
 Alvin is an tool for developing apps (particularly user interfaces) through natural language interpretation, which could ultimately reduce development time and increase app development accessibility. 
 
 I've found that mapping out app screens in my head is relatively easy, but translating those screens from my brain to computer code takes effort and time, even for languages that I know well. It would be neat if I could just talk to the computer and describe what I want in natural language, and have the computer understand and build the screens for me. For example, telling the computer to 
@@ -23,10 +23,10 @@ is of course too vague, but the computer can start with an initial screen and as
 
 However possible/practical, it is an intriguing and fun idea.
 
-### Scope
+## Scope
 The current version of Alvin is more of a proof-of-concept than a fully usuable assistant. But of course the goal is to get there one day.
 
-### Implementation
+## Implementation
 *Conceptually*, Alvin has two parts:
 1. A part to listen to the user and translate their voice into meaningful commands (essentially NLP)
 2. A part to write an app based on these commands. More specifically, Alvin will literally write code in whatever language is chosen and output an app that can be run independently, just like any other app of that language.
@@ -39,7 +39,7 @@ The current version of Alvin is more of a proof-of-concept than a fully usuable 
 
 I've chosen to write Alvin in Python because of Python's flexibility and NLP libraries. I also know it the best :)
 
-### Running Alvin
+## Running Alvin
 Alvin is built to run using Python 3.7.4. You can [download and install Python directly](https://www.python.org/downloads/) or you can download a handy [Anaconda distribution](https://www.anaconda.com/distribution/).
 
 To run Alvin:
@@ -48,7 +48,9 @@ python alvin.py -appname YOUR_APP_NAME
 ```
 and replace YOUR_APP_NAME with the name of the output app (i.e. cool-app.py)
 
-### Third-Party Tools
+## Third-Party Tools
 Alvin uses the following third-party tools:
-1. [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) and [PyAudio](http://people.csail.mit.edu/hubert/pyaudio/#downloads) for translating voice-to-text. I use the "recognize_google" option, which uses Google Cloud Speech API and works well.
+1. [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) and [PyAudio](http://people.csail.mit.edu/hubert/pyaudio/#downloads) for translating voice-to-text.
+2. [Spacy](https://spacy.io/) for lemmanizing individual words before they are turned into commands. A "lemma" is the canonical or dictionary root word for any given set of words. For example, "worry" is the lemma of "worries, worried, etc.".
+3. [Tkinter](https://docs.python.org/3/library/tkinter.html) as the graphical user interface builder. I chose Tkinter over PyQt for it's simplicity.
 
