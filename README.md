@@ -28,7 +28,7 @@ The current version of Alvin is more of a proof-of-concept than a fully usuable 
 
 ## Implementation
 *Conceptually*, Alvin has two parts:
-1. A part to listen to the user and translate their voice into meaningful commands (essentially NLP)
+1. A part to listen to the user and translate their voice into meaningful commands (essentially NLP).
 2. A part to write an app based on these commands. More specifically, Alvin will literally write code in whatever language is chosen and output an app that can be run independently, just like any other app of that language.
 
 *Functionally*, Alvin has four main classes:
